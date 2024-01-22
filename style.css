@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --border-radius: 15px;
+  --background-color: rgb(200, 219, 236);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+
+
+}
+
+body {
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  font-family: "Outfit", sans-serif;
+}
+
+.main {
+  width: 22rem;
+  max-width: 650px;
+  background-color: var(--White);
+  text-align: center;
+  height: 80vh;
+  border-radius: var(--border-radius);
+}
+img {
+  /* width: 100%; */
+  max-width: 300px;
+  height: auto;
+  margin-top: 22px;
+  border-radius: var(--border-radius);
+}
+
+.h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.h2{
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin-top: 10px; /* Increase the top margin for smaller screens */
+  }
+
+  .main {
+    height: auto; /* Allow the container to adjust its height based on content */
+  }
+
+  img {
+    margin-top: 10px; /* Adjust the top margin for the image on smaller screens */
+  }
+}
